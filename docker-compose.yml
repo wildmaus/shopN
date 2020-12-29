@@ -1,0 +1,14 @@
+version: "3.2"
+
+services:
+  server: 
+    image: wildmaus/shop_server
+    restart: always
+    volumes: 
+      - '.:/shop/'
+    ports:
+      - "2225:22"
+      - "80:8000"
+
+volumes:
+  postgres_data:

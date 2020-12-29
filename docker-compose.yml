@@ -2,7 +2,7 @@ version: "3.2"
 
 services:
   server: 
-    image: wildmaus/shop_server
+    image: wildmaus/shop_new
     restart: always
     volumes: 
       - '.:/shop/'

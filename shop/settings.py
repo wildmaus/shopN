@@ -87,21 +87,18 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-<<<<<<< HEAD
         'NAME': 'xhmgqxed',
         'USER': 'xhmgqxed',
         'PASSWORD': 'bqtiMnMIzRwkFANWB1LpAgzGxKfNTONi',
         'HOST': 'suleiman.db.elephantsql.com',
         'PORT': '5432',
-=======
-        'NAME': os.getenv('POSTGRES_DB'),
-        'USER': os.getenv('POSTGRES_USER'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('POSTGRES_HOST'),
-        'PORT': '5432'
+        #'NAME': os.getenv('POSTGRES_DB'),
+        #'USER': os.getenv('POSTGRES_USER'),
+        #'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        #'HOST': os.getenv('POSTGRES_HOST'),
+        #'PORT': '5432'
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': os.path.join(BASE_DIR, 'sqlite3.db'),
->>>>>>> e33fc53af65886b854dda08f4dac1d9c42e2358e
     }
 }
 

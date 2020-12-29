@@ -36,7 +36,6 @@
                   </li>
             <a class="nav-link" href="{% url 'base' %}">Home</a>
           </li>
-<<<<<<< HEAD
             {% if user.is_authenticated %}
                       <li class="nav-item">
                                     <li class="nav-item">
@@ -52,19 +51,6 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'cart' %}">Корзина <span class="badge badge-pill badge-danger">{{ cart.products.count }}</span></a>
           </li>
-=======
-
-                {% if user.is_authenticated %}
-                    <li>
-                    <a class="nav-link" href="{% url 'logout' %}">Log Out
-                        <span class="sr-only">(current)</span></a></li>
-                {% else %}
-                    <li>
-                    <a class="nav-link" href="{% url 'login' %}">Log in
-                        <span class="sr-only">(current)</span>
-                     </a></li>
-                {% endif %}
->>>>>>> e33fc53af65886b854dda08f4dac1d9c42e2358e
         </ul>
       </div>
     </div>
@@ -133,17 +119,10 @@
                 <h4 class="card-title">
                   <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
                 </h4>
-<<<<<<< HEAD
                 <h5>{{ product.price }} руб.</h5>
                 <a href="{% url 'add_to_cart' ct_model=product.get_model_name slug=product.slug %}">
                   <button class="btn btn-danger">Добавить в корзину</button>
                 </a>
-=======
-                <h5>{{ product.price }}</h5>
-                  <a href="{{ product.get_absolute_url }}">
-                      <button class="btn btn-success">Характеристики</button>
-                  </a>
->>>>>>> e33fc53af65886b854dda08f4dac1d9c42e2358e
               </div>
             </div>
           </div>

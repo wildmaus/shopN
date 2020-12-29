@@ -11,12 +11,8 @@ from .forms import OrderForm
 from .utils import recalc_cart
 
 
-<<<<<<< HEAD
+
 class BaseView(CartMixin, View):
-=======
-# Create your views here.
-class HomeView(View):
->>>>>>> e33fc53af65886b854dda08f4dac1d9c42e2358e
 
     def get(self, request, *args, **kwargs):
         categories = Category.objects.get_categories_for_left_sidebar()
